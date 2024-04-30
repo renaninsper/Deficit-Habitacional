@@ -1,0 +1,1753 @@
+@charset "UTF-8";
+.barcontainer {
+    padding: 10px 10px 0px 10px;
+    margin: 5px 5px 0px 5px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: groove;
+}
+.barcontainer.sociedade.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e451512d;
+    box-shadow: 1px 1px 8px 2px rgb(197, 86, 86);
+}
+.barcontainer.economia.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3fb8b02c;
+    box-shadow: 1px 1px 8px 2px rgb(63, 184, 175);
+}
+.barcontainer.meiofisico.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #4189db2d;
+    box-shadow: 1px 1px 8px 2px rgb(65, 137, 219);
+}
+.barcontainer.ambcons.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #a74e9f2d;
+    box-shadow: 1px 1px 8px 2px rgb(167, 78, 159);
+}
+.barcontainer.meioamb.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #1e83272d;
+    box-shadow: 1px 1px 8px 2px rgb(30, 131, 38);
+}
+.barcontainer.desenvolvimento.clicked {
+    padding: 10px 10px 0px 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e77a212d;
+    box-shadow: 1px 1px 8px 2px rgb(231, 122, 33);
+}
+.leaflet-top.leaflet-right {
+    position: absolute;
+    right: 400px;
+    top: 40px;
+}
+#explorador.col0 {
+    height: 70%;
+    width: 340px;
+    position: absolute;
+    z-index: 500;
+    right: 10px;
+    top: 60px;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#legenda.col4 {
+    height: 560px;
+    width: 145px;
+    position: absolute;
+    z-index: 500;
+    right: 360px;
+    top: 60px;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.titulo {
+    font-weight: bold;
+    font-size: 15px;
+    color: #4e4e4e;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    margin: 0 0px 10px 0;
+}
+.subtitulo {
+    font-size: 11px;
+    color: #4e4e4e;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 10px 0;
+}
+#hover_dado.dado {
+    font-size: 25px;
+    color: #4e4e4e;
+    position: absolute;
+    bottom: 180px;
+    padding: 0px 10px 10px 10px;
+}
+#hover_distrito.titulo {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4e4e4e;
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 0px 10px 0px;
+    bottom: 220px;
+}
+#grafico_legenda {
+    position: absolute;
+    bottom: -10px;
+    left: -70px;
+    background-color: #ffffff00;
+}
+#colcor {
+    height: 210px;
+    width: 30px;
+    position: absolute;
+    z-index: 501;
+    left: 10px;
+    top: 70px;
+    background-color: #ffffffdb;
+    border: solid;
+    border-width: 1px;
+    border-color: #D3D3D3;
+    margin: 0px 10px 0px 0;
+}
+.cor{
+    z-index: 501;
+    height: 30px;
+    width: 30px;
+}
+.cor.hovered{
+    z-index: 501;
+    height: 26px;
+    width: 30px;
+    border: solid;
+    border-width: 2px;
+    border-color: #383838;
+    position: relative;
+    left: -2px;
+}
+#coltexto {
+    height: 210px;
+    width: 90px;
+    position: absolute;
+    z-index: 501;
+    left: 50px;
+    top: 70px;
+    background-color: #ffffff00;
+    margin: 0px 10px 0px 0px;
+}
+.texto{
+    position: relative;
+    z-index: 501;
+    top: 10px;
+    height: 30px;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+#colinput {
+    height: 155px;
+    width: 90px;
+    position: absolute;
+    z-index: 501;
+    left: 50px;
+    top: 100px;
+    background-color: #ffffff00;
+    margin: 0px 10px 0px 0px;
+}
+#input10 {
+    width: 35px;
+    position: absolute;
+    top: 7px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input11 {
+    width: 35px;
+    position: absolute;
+    top: 37px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input12 {
+    width: 35px;
+    position: absolute;
+    top: 67px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input13 {
+    width: 35px;
+    position: absolute;
+    top: 97px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input14 {
+    width: 35px;
+    position: absolute;
+    top: 127px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input20 {
+    width: 35px;
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input21 {
+    width: 35px;
+    position: absolute;
+    top: 37px;
+    left: 50px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input22 {
+    width: 35px;
+    position: absolute;
+    top: 67px;
+    left: 50px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input23 {
+    width: 35px;
+    position: absolute;
+    top: 97px;
+    left: 50px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#input24 {
+    width: 35px;
+    position: absolute;
+    top: 127px;
+    left: 50px;
+    border-style: dotted;
+    border-width: 1px;
+}
+#botao_legenda:hover {
+    background-image: url(../images/editar2.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+#botao_legenda:hover:after {
+    content: "EDITAR VALORES";
+    white-space: pre;
+    animation-name: anime2;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: -18px;
+    top: -25px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 9px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+#botao_legenda {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 10px;
+    top: 5px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 3px;
+    background-image: url(../images/editar.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+}
+#botao_legenda.clicked {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 10px;
+    top: 5px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 3px;
+    background-image: url(../images/editar2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(1px) translateX(1px);
+    text-decoration: none;
+}
+#menu.col2.ss-container {
+    height: 0px;
+    width: 340px;
+    position: absolute;
+    z-index: 500;
+    right: 10px;
+    top: 77%;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-radius: 10px;
+}
+#area.col6 {
+    width: 260px;
+    height: 212px;
+    position: absolute;
+    z-index: 499;
+    left: 10px;
+    top: 80px;
+    background-color: rgb(195, 195, 195);
+    clip-path: polygon(0px -50px, 260px -50px, 260px 212px, 38px 260px, 38px 35px, 0px 35px);
+    border-radius: 7px;
+    animation-name: anime3;
+    animation-duration: 1s;
+}
+#area_escolhida.col7 {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    z-index: 499;
+    left: 10px;
+    top: 55px;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-radius: 10px;
+}
+@keyframes anime3 {
+    from {
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        width: 260px;
+        height: 0px;
+    }
+    to {
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        width: 260px;
+        height: 212px;
+    }
+}
+#area.col6:hover:after {
+    content: "UNIDADES GEOGRÁFICAS";
+    white-space: pre;
+    background-color: #4343439c;
+    position: relative;
+    left: 74px;
+    top: -238px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+.opcao_area {
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    border: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #818181;
+    color: white;
+    position: relative;
+    left: 40px;
+    padding: 5.4px;
+    margin: 2px;
+    animation-name: anime4;
+    animation-duration: 1s;
+}
+@keyframes anime4 {
+    from {
+        width: 0px;
+        background-color: #ffffff00;
+        color: #ffffff00;
+    }
+    to {
+        width: 200px;
+        background-color: #818181;
+        color: white;
+    }
+}
+.opcao_area:hover {
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #515151;
+    color: white;
+}
+.opcao_area.clicked {
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    border: solid;
+    border-width: 1px;
+    border-color: #ffffff00;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e0ffda;
+    color: #818181;
+    position: relative;
+    left: 40px;
+    padding: 5.4px;
+    margin: 2px;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+}
+.fora_da_tela {
+    display: none;
+}
+#tabelaheader {
+    padding: 2px 2px 2px 2px;
+    cursor: move;
+    background-color: #818181;
+    color: #fff;
+    width: 195px;
+    height: 20px;
+}
+#tabelabody {
+    padding: 2px 2px 2px 2px;
+    width: 195px;
+    height: 95px;
+}
+#tabela.col5 {
+    position: absolute;
+    z-index: 505;
+    left: 50px;
+    top: 60px;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#graficoheader {
+    padding: 2px 2px 2px 2px;
+    cursor: move;
+    background-color: #818181;
+    color: #fff;
+    width: 895px;
+    height: 20px;
+}
+#reload:hover {
+    background-image: url(../images/reload2.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+#reload:hover:after {
+    content: "ATUALIZAR TABELA";
+    white-space: pre;
+    animation-name: anime2;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: -10px;
+    top: -25px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 9px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+#reload {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 27px;
+    top: 2px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 1px;
+    border-radius: 3px;
+    background-image: url(../images/reload.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+}
+#reload:active {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 27px;
+    top: 2px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 1px;
+    border-radius: 3px;
+    background-image: url(../images/reload2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(1px) translateX(1px);
+    text-decoration: none;
+}
+#fechar:hover {
+    background-image: url(../images/fechar2.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+#fechar:hover:after {
+    content: "FECHAR";
+    white-space: pre;
+    animation-name: anime2;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: -10px;
+    top: -25px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 9px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+#fechar {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 5px;
+    top: 2px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 1px;
+    border-radius: 3px;
+    background-image: url(../images/fechar.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+}
+#fechar:active {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    z-index: 500;
+    right: 5px;
+    top: 2px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 1px;
+    border-radius: 3px;
+    background-image: url(../images/fechar2.svg);
+    background-color: #f78181;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px #f78181;
+    transform: translateY(1px) translateX(1px);
+    text-decoration: none;
+}
+
+#fechar_barcontainer {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    z-index: 500;
+    left: -2px;
+    top: -20px;
+    background-image: url(../images/fechar.svg);
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@keyframes anime2 {
+    from {
+        background-color: #43434300;
+        position: relative;
+        left: -10px;
+        top: -1px;
+        font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+        font-size: 9px;
+        color: rgba(255, 255, 255, 0);
+        border-radius: 1px;
+        padding: 3px 3px 3px 3px;
+    }
+    to {
+        background-color: #4343439c;
+        position: relative;
+        left: -10px;
+        top: -25px;
+        font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+        font-size: 9px;
+        color: white;
+        border-radius: 4px;
+        padding: 3px 3px 3px 3px;
+    }
+}
+#graficobody {
+    padding: 2px 2px 2px 2px;
+    width: 895px;
+    height: 355px;
+}
+#grafico.col3 {
+    position: absolute;
+    z-index: 505;
+    left: 50px;
+    top: 580px;
+    background-color: #ffffffdb;
+    border: groove;
+    border-width: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#grafico1 {
+    display: grid;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+#grafico2 {
+    display: grid;
+    position: absolute;
+    top: 2px;
+    left: 300px;
+}
+#grafico3 {
+    display: grid;
+    position: absolute;
+    top: 2px;
+    left: 600px;
+}
+#botao_area.botao_esquerda:hover {
+    background-image: url(../images/area2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_area.botao_esquerda:hover:after {
+    content: "UNIDADES GEOGRÁFICAS";
+    white-space: pre;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_area.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 80px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/area.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    
+}
+#botao_area.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 80px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/area2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+#botao_area.botao_esquerda.clicked:hover:after {
+    content: "UNIDADES GEOGRÁFICAS";
+    white-space: pre;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 70px;
+    top: -30px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+.leaflet-control-geocoder.leaflet-bar.leaflet-control:hover {
+    background-image: url(../images/busca2.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    background-color: #fffdda;
+}
+.leaflet-control-geocoder.leaflet-bar.leaflet-control:hover:after {
+    content: "BUSCAR ENDEREÇO";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+.leaflet-control-geocoder.leaflet-bar.leaflet-control {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 70px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/busca.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    
+}
+.leaflet-control-geocoder.leaflet-bar.leaflet-control.leaflet-control-geocoder-expanded:hover:after {
+    content: "BUSCAR ENDEREÇO";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 90px;
+    top: -28px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+.leaflet-control-geocoder.leaflet-bar.leaflet-control.leaflet-control-geocoder-expanded {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 70px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/busca2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+a.leaflet-bar-part.leaflet-bar-part-single:hover {
+    background-image: url(../images/pin2.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+a.leaflet-bar-part.leaflet-bar-part-single:hover:after {
+    content: "MINHA LOCALIZAÇÃO";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+a.leaflet-bar-part.leaflet-bar-part-single {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 105px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/pin.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+    
+}
+.leaflet-control-locate.leaflet-bar.leaflet-control.active.following a.leaflet-bar-part.leaflet-bar-part-single,
+.leaflet-control-locate.leaflet-bar.leaflet-control.active a.leaflet-bar-part.leaflet-bar-part-single {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 105px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/pin2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+    text-decoration: none;
+}
+a.leaflet-control-zoom-in:hover {
+    background-image: url(../images/mais2.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+a.leaflet-control-zoom-in:hover:after {
+    content: "MAIS ZOOM";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+a.leaflet-control-zoom-in {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 140px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/mais.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+    
+}
+a.leaflet-control-zoom-in:active {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 140px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/mais2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+    text-decoration: none;
+}
+a.leaflet-control-zoom-out:hover {
+    background-image: url(../images/menos2.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    background-color: #fffdda;
+    text-decoration: none;
+}
+a.leaflet-control-zoom-out:hover:after {
+    content: "MENOS ZOOM";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+}
+a.leaflet-control-zoom-out {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 175px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/menos.svg);
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    text-decoration: none;
+    
+}
+a.leaflet-control-zoom-out:active {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 175px;
+    border: ridge;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+    background-image: url(../images/menos2.svg);
+    background-color: #e0ffda;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+    text-decoration: none;
+}
+#botao_grafico.botao_esquerda:hover {
+    background-image: url(../images/grafico2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_grafico.botao_esquerda:hover:after {
+    content: "GRÁFICOS";
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_grafico.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 255px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/grafico.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    
+}
+#botao_grafico.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 255px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/grafico2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+#botao_tabela.botao_esquerda:hover {
+    background-image: url(../images/tabela2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_tabela.botao_esquerda:hover:after {
+    content: "TABELAS";
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_tabela.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 290px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/tabela.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+    
+}
+#botao_tabela.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 290px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/tabela2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+#botao_explorador.botao_esquerda:hover {
+    background-image: url(../images/explorador2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_explorador.botao_esquerda:hover:after {
+    content: "EXPLORADOR";
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_explorador.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 325px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/explorador.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65); 
+}
+#botao_explorador.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 325px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/explorador2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+#botao_menu.botao_esquerda:hover {
+    background-image: url(../images/menu2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_menu.botao_esquerda:hover:after {
+    content: "FILTROS";
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_menu.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 360px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65); 
+}
+#botao_menu.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 360px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/menu2.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+#botao_osm.botao_esquerda:hover {
+    background-image: url(../images/osm2.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    background-color: #fffdda;
+}
+#botao_osm.botao_esquerda:hover:after {
+    content: "OPEN STREET MAP";
+    white-space: pre;
+    margin-right: -200px;
+    animation-name: anime;
+    animation-duration: 0.5s;
+    background-color: #4343439c;
+    position: relative;
+    left: 35px;
+    top: 5px;
+    font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 3px 3px 3px;
+}
+#botao_osm.botao_esquerda {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 395px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #ffffffdb;
+    background-image: url(../images/osm.svg);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65); 
+}
+#botao_osm.botao_esquerda.clicked {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 500;
+    left: 10px;
+    top: 395px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: #e0ffda;
+    background-image: url(../images/osm2.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 1px rgba(96,253,63,0.83);
+    transform: translateY(2px) translateX(2px);
+}
+@keyframes anime {
+    from {
+        background-color: #43434300;
+        position: relative;
+        left: 10px;
+        top: 5px;
+        font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0);
+        border-radius: 1px;
+        padding: 3px 3px 3px 3px;
+    }
+    to {
+        background-color: #4343439c;
+        position: relative;
+        left: 35px;
+        top: 5px;
+        font: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        color: white;
+        border-radius: 4px;
+        padding: 3px 3px 3px 3px;
+    }
+}
+.jstree-default .tema .jstree-icon:empty {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+}
+.jstree-default .subtema .jstree-icon:empty {
+    width: 19px;
+    height: 24px;
+    line-height: 19px;
+}
+.ss-content {
+    overflow-x: hidden;
+}
+a[id^="no_checkbox"] .jstree-checkbox{
+    display: none;
+}
+.info {
+    font: 14px/16px 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    background: #ffffff00;
+}
+.info h4 {
+    font: 14px/16px 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+    margin: 0 0 5px;
+    color: #777;
+}
+html, body, #map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+}
+table.janela th, table.janela td {
+    border-style:solid;
+    border-color: #96D4D4;
+    border-width: 1px;
+}
+.noUi-horizontal .noUi-handle { /* Estilo do botão do slider */
+    width: 18px;
+    height: 28px;
+    left: -17px;
+    top: -10px;
+}
+.noUi-handle:after, .noUi-handle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 2px;
+    background: #E8E7E6;
+    left: 5px;
+    top: 6px;
+    align-content: center;
+}
+.noUi-handle:after {
+    left: 10px;
+}
+.noUi-connect.pop {
+        background: #c55656;
+}
+td, span {
+    color: rgb(130, 130, 130);
+}
+titulo, b, th {
+    color: rgb(50, 50, 50);
+}
+div.cor1{
+    background: #aaaaaa;
+}
+div.cor0{
+    background: rgb(56,180,37);
+    background: linear-gradient(90deg, rgb(26, 150, 65) 0%, rgba(255,255,192) 50%, rgb(215, 25, 28) 100%);
+}
+.cor00 {
+    background: #3130308a;
+}
+div.cor2{
+    background: #f78181;
+}
+div.noUi-connect.sociedade{
+    background: #f78181;
+}
+div.noUi-connect.economia{
+    background: #3fb8af;
+}
+div.noUi-connect.meiofisico{
+    background: #4189db;
+}
+div.noUi-connect.ambcons{
+    background: #a74e9f;
+}
+div.noUi-connect.meioamb{
+    background: #1e8326;
+}
+div.noUi-connect.desenvolvimento{
+    background: #e77a21;
+}
+.slider {
+    font: 12px/1.5 "Roboto Condensed", Verdana, Helvetica, sans-serif;
+    margin-top: -30px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 14.2px;
+}
+
+.slidervertical {
+    font: 9px/1.5 "Roboto Condensed", Verdana, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    background: #3130308a;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+display: block;
+position: relative;
+font-family: "Roboto Condensed";
+font-size: 12px;
+margin-left: 2px;
+}
+div#eixox {
+    position: absolute;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    top: 0px;
+    left: 1px;
+    width: 200px;
+}
+#x.custom-graph-select {
+    position: absolute;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    margin-left: 2px;
+    width: 200px;
+    top: 14px;
+    left: 0px;
+}
+div#eixoy {
+    position: absolute;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    top: 30px;
+    left: 1px;
+    width: 200px;
+}
+#y.custom-graph-select {
+    position: absolute;
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    margin-left: 2px;
+    width: 200px;
+    top: 44px;
+    left: 0px;
+}
+div[id*="myDiv"] {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+}
+
+.custom-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+.custom-graph-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+background-color: rgb(145, 145, 145);
+}
+
+.graph-select-selected {
+background-color: rgb(145, 145, 145);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 7px;
+right: 3px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+.graph-select-selected:after {
+position: absolute;
+content: "";
+top: 7px;
+right: 3px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 1px;
+}
+
+.graph-select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 1px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+color: #ffffff;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
+user-select: none;
+}
+
+.select-items div,.graph-select-selected {
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: rgb(145, 145, 145);
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+.botao_variavel:hover {
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+    background-color: #fffdda;
+}
+.botao_variavel {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #ffffffdb;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 1px rgba(67,67,67,0.65);
+}
+div[id*="sociedade"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #e4515113;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(197, 86, 86);
+    transform: translateY(2px) translateX(2px);
+}
+div[id*="economia"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #3fb8b017;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(63, 184, 175);
+    transform: translateY(2px) translateX(2px);
+}
+div[id*="ambcons"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #a74e9f17;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(167, 78, 159);
+    transform: translateY(2px) translateX(2px);
+}
+div[id*="meiofisico"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #4189db18;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(65, 137, 219);
+    transform: translateY(2px) translateX(2px);
+}
+div[id*="meioamb"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #1e832618;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(30, 131, 38);
+    transform: translateY(2px) translateX(2px);
+}
+div[id*="desenvolvimento"].botao_variavel.clicked {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    z-index: 500;
+    left: 12px;
+    top: -3px;
+    border: ridge;
+    border-width: 2px;
+    border-radius: 4px;
+    background-color: #e77a2115;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 2px rgb(231, 122, 33);
+    transform: translateY(2px) translateX(2px);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th {
+    position: sticky;
+    top: 0;
+    background-color: #818181;
+    color: #ffffff;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
